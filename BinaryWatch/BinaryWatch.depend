@@ -1,0 +1,12 @@
+# depslib dependency file v1.0
+1421563795 source:/home/dana/Documents/workspace/BinaryWatch/BinaryWatch/main.cpp
+	<iostream>
+	<stdio.h>
+	"Binary.h"
+
+1421563738 source:/home/dana/Documents/workspace/BinaryWatch/BinaryWatch/Binary.cpp
+	<iostream>
+	"Binary.h"
+
+1421564373 /home/dana/Documents/workspace/BinaryWatch/BinaryWatch/Binary.h
+
