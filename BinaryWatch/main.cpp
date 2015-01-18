@@ -1,17 +1,27 @@
 #include <iostream>
 #include <stdio.h>
+#include<time.h>
 
 using namespace std;
-void ConvertToBinary(int n)
+int count = 0;
+int hour[64];
+int i=0,r;
+void ConvertToBinary(int num)
 {
-    if (n / 2 != 0) {
-        ConvertToBinary(n / 2);
+    if(num!=0)
+    {
+      r = num%2;
+      hour[i++] = r;
+      num /= 2;
+      ConvertToBinary(num);
     }
-    printf("%d", n % 2);
 }
 
 int main()
 {
     ConvertToBinary(2);
+    for(int j=i-1;j>=0;j--)
+        cout<<hour[j];
+
     return 0;
 }
