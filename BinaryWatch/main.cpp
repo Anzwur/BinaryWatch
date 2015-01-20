@@ -1,15 +1,23 @@
-#include <iostream>
-#include <stdio.h>
+#include "stdafx.h"
+#include "Clock.h"
 #include "Binary.h"
 
 using namespace std;
 
-time_t  timev;
-
 
 int main()
 {
+	Clock* clock = new Clock();
     Binary* binary = new Binary();
-    binary->ConvertToBinary(2);
+	clock->Init();
+
+	int hourNow, minuteNow;
+
+	while(true)
+	{
+		clock->Update();
+	}
+
+	system("pause");
     return 0;
 }

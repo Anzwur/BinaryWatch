@@ -5,10 +5,11 @@ class Binary
 {
 public:
     void ConvertToBinary(int num);
+	void printArray();
 private:
-    int count = 0;
+    int count;
     int hour[64];
-    int i=0,r;
+    int i,r;
 };
 
 #endif
